@@ -1,3 +1,213 @@
+<<<<<<< HEAD
+header{
+    margin-left: 270px;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 0%;
+    height: 30px;
+    font-size: x-large;
+}
+h1{
+    text-align: center;
+    color: #09A7A1;
+    margin-top: 35px;
+    margin-left: 270px;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #09A7A1;
+}
+nav a{
+   display: inline-block;
+    padding: 5px 15px;
+    width: 50%;
+    height: 10%;
+    font-weight: bold;
+}
+
+i.fas {
+    width: 25%;
+ }
+
+a.navigationButtons{
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.profilePicture{
+    width: 300px;
+    height: 150;
+    border-radius: 8%;
+    display: block;
+    margin-left: 750px;
+    margin-right: auto;
+    margin-top: 50px;
+} 
+
+.profilePicture:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 140, 186, 0.5);
+  }
+
+p{
+    margin-left: 650px;
+    margin-right: 320px;
+    text-align: justify;
+}
+
+hr{
+    border: 0.1px solid  #09A7A1;
+    margin-top: 10px;
+}
+footer{
+    text-align:  center; 
+    margin-bottom: 10px;
+    margin-left: 300px;
+}
+
+figure{
+    display: inline-block; 
+    margin-left: 380px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-right: -100px; 
+}
+
+.portfolioImages{
+    width: 150px;
+    height: 150px;
+    border-radius: 8%;
+    border-width: thin;
+    border-style: ridge;
+    border-color: #09A7A1;    
+}
+
+.portfolioImages:hover {
+    box-shadow: 0 0 10px 3px rgba(0, 140, 186, 0.5);
+  }
+
+  figcaption, a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+figcaption{
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-right: -100px;    
+}
+
+a:hover{
+    font-size: 30px;
+    text-decoration: wavy;
+    /*text-shadow: 10px 3px rgba(0, 140, 186, 0.5);*/
+}
+
+i#contact{
+    margin-left: 800px;
+    margin-top: 50px;
+    color:orangered;
+}
+
+address{
+    margin-left: 820px;
+    padding: 10px;
+}
+
+/* RESPONSIVE RULES*/
+@media screen and (max-width: 899px){
+    header{
+        margin-left: 0px;
+        margin-top: 25%;
+        text-align: center;
+    }
+    h1{
+        margin-left: 0px; 
+        margin-top: 5%;
+        text-align: center;
+    }
+    nav{
+        position: absolute;
+        flex-direction: row;
+        height: 25%;
+        width: 100%;
+    }
+    nav a{
+         padding: 5px 35px;
+         width: 13%;
+         height: 15%;      
+     }
+    
+    a.navigationButtons{
+        font-size: 100%;
+    }
+    figure{
+        display: inline-block; 
+        margin-left: 20px;
+        margin-right: 70px;         
+    }
+
+    .profilePicture{
+        display: flex;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+    
+    p{
+        margin-top:  30px;
+        margin-left: 60px;
+        margin-right: 60px;
+        text-align: justify;
+    }
+    address{
+        margin-left: 290px;   
+    }
+    i#contact{
+        display: relative;
+        margin-left: 290px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    footer{
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1428px){
+   .profilePicture{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    
+    address{
+        margin-left: 510px;   
+    }
+    i#contact{
+        display: relative;
+        margin-left: 490px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    p{
+        margin-top:  30px;
+        margin-left: 380px;
+        margin-right: 100px;
+        text-align: justify;
+    }
+}
+=======
 header{
     margin-left: 800px;
     font-family: cursive;
@@ -113,4 +323,5 @@ a:hover{
 
 
 
+>>>>>>> ae49d13a66f2a4d9106ab617e3d2d0392ac21a58
   
