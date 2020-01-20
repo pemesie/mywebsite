@@ -6,6 +6,7 @@ header{
     height: 30px;
     font-size: x-large;
 }
+
 h1{
     text-align: center;
     color: #09A7A1;
@@ -13,9 +14,23 @@ h1{
     margin-left: 270px;
 }
 
+button.toggle-button{
+    margin-left: 298px;
+    padding: 10px 5px;
+    background-color: #09A7A1;
+    border-style: hidden;
+    font-size: large;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+button.toggle-button:active{
+    transform: translateY(3px);
+}
+
 nav{
     position: fixed;
-    left: 0;
+    left: 0px;
     top: 0;
     height: 100%;
     width: 300px;
@@ -25,6 +40,7 @@ nav{
     justify-content: center;
     background-color: #09A7A1;
 }
+
 nav a{
    display: inline-block;
     padding: 5px 15px;
@@ -123,7 +139,8 @@ address{
 }
 
 /* RESPONSIVE RULES*/
-@media screen and (max-width: 899px){
+
+@media screen and (max-width: 768px){
     header{
         margin-left: 0px;
         margin-top: 25%;
@@ -183,11 +200,99 @@ address{
     }
 }
 
+@media screen and (max-width: 1024px ){
+    header{
+        margin-top: 40px;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    .profilePicture{
+        position: absolute;
+        width: 200px;
+        height: 270px;
+        margin-top: 50px;
+        margin-left: 50%;
+    }
+
+    p{
+        margin-top:  360px;
+        margin-left: 450px;
+        margin-right: 230px;
+        text-align: justify;
+    }
+
+    h1{
+        margin-left: 180px; 
+        margin-top: 5%;
+        text-align: center;
+    }
+    i#contact{
+        display: relative;
+        margin-left: 470px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    address{
+        margin-left: 510px;
+        padding: 10px;
+    }
+    
+    footer{
+        margin-left: 200px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 425px){
+    header{
+        margin-top: 90px;
+        margin-left: 200px;
+        text-align: center;
+        font-size: 40px;
+    }
+    a.navigationButtons{
+        font-size: 25px;
+    }
+
+    .profilePicture{
+        position: absolute;
+        width: 400px;
+        height: 500px;
+        margin-top: 190px;
+        margin-left: 45%;
+    }
+
+    h1{
+        margin-left: 180px; 
+        margin-top: 5%;
+        font-size: 30px;
+        text-align: center;
+    }
+    p{
+        margin-top:  830px;
+        margin-left: 430px;
+        margin-right: 130px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    figcaption a{
+        font-size: 25px;   
+    }
+    footer{
+        margin-left: 250px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+/*
 @media screen and (max-width: 1428px){
-   .profilePicture{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    body{
+        position: relative;
+    }
+    .profilePicture{
+        position: absolute;
         margin-top: 50px;
     }
     
@@ -207,4 +312,9 @@ address{
         text-align: justify;
     }
 }
+*/
+
+
+
+
   
