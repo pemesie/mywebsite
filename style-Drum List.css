@@ -59,7 +59,9 @@ p{
   display: block;
   color: #ffc600;
   font-family: cursive;
-  font-weight: bold;
+/*   font-weight: bold; */
+  font-weight: bolder;
+  font-size-adjust: initial;
   margin-top: 210px;
   margin-left: 200px;
 }
