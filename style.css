@@ -1,27 +1,27 @@
 header{
-    margin-left: 270px;
+    margin-left: 910px;
     font-family: cursive;
-    text-align: center;
-    margin-top: 0%;
+    /* text-align: center; */
+    margin-top: 5%;
     height: 30px;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 h1{
-    text-align: center;
+    margin-left: 990px;
     color: #09A7A1;
     margin-top: 35px;
-    margin-left: 270px;
 }
 
 button.toggle-button{
-    margin-left: 298px;
+    /* position: absolute; */
     padding: 10px 5px;
     background-color: #09A7A1;
     border-style: hidden;
     font-size: large;
     cursor: pointer;
     border-radius: .5rem;
+    /* z-index: 1; */
 }
 
 button.toggle-button:active{
@@ -39,32 +39,32 @@ nav{
     align-items: center;
     justify-content: center;
     background-color: #09A7A1;
+    z-index: 1;
 }
 
 nav a{
-   display: inline-block;
-    padding: 5px 15px;
-    width: 50%;
+    display: inline-block;
+    /* margin: 20px 50px; */
+    /* padding: 10px 15px; */
+    /* width: 50%; */
     height: 10%;
     font-weight: bold;
+    font-size: 150%;
+    /* text-decoration: none; */
 }
 
 i.fas {
-    width: 25%;
+    width: 10%;
+    margin-right: 25px;
  }
-
-a.navigationButtons{
-    font-size: 150%;
-    text-decoration: none;
-}
 
 .profilePicture{
     width: 300px;
     height: 150;
     border-radius: 8%;
     display: block;
-    margin-left: 750px;
-    margin-right: auto;
+    margin-left: 890px;
+    /* margin-right: auto; */
     margin-top: 50px;
 } 
 
@@ -73,16 +73,13 @@ a.navigationButtons{
   }
 
 p{
-    margin-left: 650px;
-    margin-right: 320px;
+    margin-left: 850px;
+    margin-right: 640px;
     font-family: cursive;
+    font-size: x-large;
     text-align: justify;
 }
 
-hr{
-    border: 0.1px solid  #09A7A1;
-    margin-top: 10px;
-}
 footer{
     text-align:  center; 
     margin-bottom: 10px;
@@ -110,7 +107,7 @@ figure{
     box-shadow: 0 0 10px 3px rgba(0, 140, 186, 0.5);
   }
 
-  figcaption, a{
+figcaption, a{
     font-size: 20px;
     text-decoration: none;
 }
@@ -128,18 +125,100 @@ a:hover{
 }
 
 i#contact{
-    margin-left: 800px;
+    margin-left: 1000px;
     margin-top: 50px;
     color:orangered;
 }
 
 address{
-    margin-left: 820px;
+    margin-left: 970px;
     padding: 10px;
 }
 
+/* Dropdown buttons*/
+.dropdown .dropbtn{
+    font-size: 30px;
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #09A7A1;
+    margin-left: 450px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 450px;
+    background-color: #09A7A1;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {color: white;}
+  
+
 /* RESPONSIVE RULES*/
 
+@media screen and (max-width: 1424px){
+    header{
+        margin-left: 50%;
+    }
+    .profilePicture{
+        margin-left: 50%;
+    }
+    h1{
+        margin-left: 55%;
+    }
+    p{
+        margin-left: 45%;
+        margin-right: 20%;
+    }
+    figure{
+        margin-left: 420px;
+    }
+    i#contact{
+        margin-left: 55%;
+    }
+    address{
+        margin-left: 52%;
+    }
+    .dropbtn{
+        margin-left: 100px;
+    }
+    .dropdown-content{
+        margin-left: 100px;
+    }
+}
+/* 
 @media screen and (max-width: 768px){
     header{
         margin-left: 0px;
@@ -156,6 +235,7 @@ address{
         flex-direction: row;
         height: 25%;
         width: 100%;
+        opacity: 0.1;
     }
     nav a{
          padding: 5px 35px;
@@ -198,8 +278,8 @@ address{
         margin-left: 0px;
         text-align: center;
     }
-}
-
+} */
+/*
 @media screen and (max-width: 1024px ){
     header{
         margin-top: 40px;
@@ -242,8 +322,8 @@ address{
         margin-left: 200px;
         text-align: center;
     }
-}
-
+} */
+/*
 @media screen and (min-width: 425px){
     header{
         margin-top: 90px;
@@ -251,6 +331,7 @@ address{
         text-align: center;
         font-size: 40px;
     }
+
     a.navigationButtons{
         font-size: 25px;
     }
@@ -276,6 +357,13 @@ address{
         font-size: 30px;
         text-align: justify;
     }
+
+    body .toggle-button{
+        margin-top: 10px;
+        font-size: 35px;
+      }
+
+     
     figcaption a{
         font-size: 25px;   
     }
@@ -284,37 +372,5 @@ address{
         font-size: 20px;
         text-align: center;
     }
-
-}
-/*
-@media screen and (max-width: 1428px){
-    body{
-        position: relative;
-    }
-    .profilePicture{
-        position: absolute;
-        margin-top: 50px;
-    }
-    
-    address{
-        margin-left: 510px;   
-    }
-    i#contact{
-        display: relative;
-        margin-left: 490px;
-        text-align: center;
-        margin-top: 50px;
-    }
-    p{
-        margin-top:  30px;
-        margin-left: 380px;
-        margin-right: 100px;
-        text-align: justify;
-    }
 }
 */
-
-
-
-
-  
