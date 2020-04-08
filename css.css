@@ -1,0 +1,245 @@
+
+html{
+    background-color: #7F9DB0 !important;
+    font-family: Verdana, Arial sans-serif !important;
+}
+
+#wrapper{
+    background-color: #E6E7E8;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#mainContent{
+    padding: 10px 15px 0px 15px;
+}
+
+h1{
+    background-color: #1E81C0;
+    font-family: cursive;
+    text-align: center;
+    padding: 10px;
+}
+
+#nav{
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nav .navLinks{
+    /* text-decoration: none; */
+    font-weight: bold;
+    margin: 20px 40px 20px 40px;
+    padding: 8px;
+    border: 3px solid #E65629;
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color:  #1E81C0;
+}
+
+a:visited{
+    color:  #E65629;
+}
+
+#nav .navLinks:hover{
+    border: 0px;
+    border-right: 3px solid #E65629;
+    border-left: 3px solid #E65629;
+    border-radius: 0px;
+}
+
+#imageHomePage{
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#downloadLink{
+    margin-left: 30px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    
+}
+#downloadLink a{
+    border: 2px dashed #E65629 ;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+}
+#downloadLink a:hover{
+    border: 3px solid;
+}
+h2{
+    text-align: center;
+    background-color: #1E81C0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h5{
+    margin-left: 70px;
+}
+
+.technologies:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.columns{
+    float: left;
+    width: 50%;
+}
+
+#lastParagraph{
+    clear: both;
+    margin-right: 320px;
+}
+
+footer{
+    background-color: #1E81C0;
+    text-align: center;
+    padding: 10px;   
+}
+
+#githubLink{
+    text-decoration: none;
+}
+#footerLink{
+    color: #000;
+}
+
+/* Portofolio page */
+
+#table{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+table{
+	border: 1px #3F2860;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+caption{
+	margin: 1em;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+td{
+	padding: 5px;
+}
+
+th{
+	 padding: 5px;
+}
+
+#backgroundColor{
+	background-color: rgb(214, 193, 186) ;
+}
+
+#linkInTable:hover{
+    border-top: 0px ;
+    border-bottom: 0px ;
+    text-decoration: underline;
+}
+
+.slideshowContainer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide{
+    padding: 5px 5px;
+    /* display: block; */
+}
+
+.slide:hover{
+    background-color: #1E81C0;
+}
+
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 30%;
+    width: auto;
+    padding: 16px;
+    color: #1E81C0;
+    font-weight: bolder;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  #prev{
+    left: 0px;
+  }
+  #next{
+      right: 0px;
+  }
+
+  
+/* CONTACT PAGE */
+#feedback{
+    text-align: center;
+    font-weight: bold;
+}
+/* Styling for the form in the contact page  */
+
+#contactEmail{
+    text-align: center;
+    margin-top: 50px;
+}
+#form{
+    width: 60%;
+    border:  groove white;
+    /* box-shadow: 2px -2px grey;  */
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* background-color: white; */
+}
+
+#info, #radio, #selectList,#textareaDiv, #submit{
+    margin: 20px 0px 20px 20px;
+}
+
+#textarea{
+    height: 15em;
+}
+
+ #submit, #reset{
+    font-weight: bold;
+    /* padding:  15px ; */
+    
+    padding: 8px;
+    border-radius: 15px;
+
+}
+
+#submit{
+    background-color: #E65629;
+    margin-right: 60px;
+}
+#reset{
+    background-color: #1E81C0;
+}
+
+
