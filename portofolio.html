@@ -3,13 +3,15 @@
 <html lang="en"> <!--Georges Nchouwat-->
 <head>
 	<title>Georges Nchouwat</title>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"> 
     <link rel="stylesheet" type="text/css" href="css.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script  src="main.js" defer></script>
 </head>
 <main id="wrapper">	
-    <h1>Georges Nchouwat</h1>
+    <h1>Georges Nchouwat<a id="hambergerMenu"><i class="fas fa-bars"></i></a></h1>
     <div id="nav">
         <nav>
             <ul >
@@ -20,9 +22,11 @@
             </ul>
         </nav>	
     </div>
+    <a class="getInTouch" href="tel:402-853-8221"><i class="fas fa-phone"></i></a>
+    <a class="getInTouch" href="mailto:pemesie1@yahoo.fr"><i class="fas fa-envelope" ></i></a>
     <div id="table">
-        <p>I have worked in two group projects, which entailed developing an iOS application using Swift and a retail inventory management 
-            system using Java, MySQL, and JavaFX. I also have a few personnal projects.
+        <p id="para">I have worked in two group projects, which entailed developing an iOS application using Swift and a retail inventory management 
+            system using Java, MySQL, and JavaFX.
         </p>
         <table border="2">
             <caption>School and personnal projects</caption>
@@ -71,15 +75,16 @@
             </tbody>
         </table>    
     </div>
-    <!-- <div class="slideshowContainer">
-        <div class="slide slide1"><a href="#" target="_blank"><img id="Netflix" src="pics/Netflix.jpg"></a></div>
-        <div class="slide slide2"><a href="#" target="_blank"><img id="StockMarket" src="pics/stockmarket.jpg"></a></div>
-        <div class="slide slide3"><a href="#" target="_blank"><img id="BookTradingClub" src="./pics/book-club.png"></a></div>
-        <div class="slide slide4" style="display: none"><a href="#" target="_blank"><img id="laptop" src="pics/image1.jpg"></a></div>
+    <p id="FuturProjects" style="text-align: center; font-weight: bold; font-size: 120%;">Futur Projects</p>
+    <div class="slideshowContainer">
+        <div class="slide slide1"><a href="#" target="_blank"><img id="Netflix" src="pics/Netflix.jpg"></a><br><span class="tooltiptext">Build a Netflix clone</span></div>
+        <div class="slide slide2"><a href="#" target="_blank"><img id="StockMarket" src="pics/stockmarket.jpg"></a><br><span class="tooltiptext">Chart the Stock Market</span></div>
+        <div class="slide slide3"><a href="#" target="_blank"><img id="BookTradingClub" src="./pics/book-club.png"></a><br><span class="tooltiptext">Book Trading Club</span></div>
+        <div class="slide slide4" style="display: none"><a href="#" target="_blank"><img id="laptop" src="pics/snake-game.png"></a><br><span class="tooltiptext">Snack Game</span></div>
    
         <a id="prev">&#10094;</a>
         <a id="next">&#10095;</a>
-    </div> -->
+    </div>
 
     <footer>Copyright &copy; 2020 
         <a id ="footerLink" href="mailto:pemesie1@yahoo.fr">Georges Nchouwat</a>

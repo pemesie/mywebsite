@@ -1,18 +1,22 @@
 
 html{
-    background-color: #7F9DB0 !important;
-    font-family: Verdana, Arial sans-serif !important;
+    background-color: #7F9DB0 ;
+    font-family: Verdana, Arial sans-serif;
 }
 
 #wrapper{
     background-color: #E6E7E8;
     max-width: 960px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;   
 }
+
 #mainContent{
     padding: 10px 15px 0px 15px;
+}
+
+#hambergerMenu{
+    display: none;
 }
 
 h1{
@@ -22,9 +26,31 @@ h1{
     padding: 10px;
 }
 
+.fa-bars{
+    color: #E65629;
+    margin-left: 65px;
+    display: none;
+}
+
+.getInTouch{
+    border-radius:50%;
+    border: 3px solid #E65629;
+    padding: 10px;
+    margin-left: 10px; 
+    margin-top: 40px;
+    margin-right: 40px;
+    display: none;
+}
+
+.fa-phone, .fa-envelope{
+    color: #E65629;
+    font-size:x-large;
+}
+
 #nav{
     text-align: center;
 }
+
 nav li{
     display: inline-block;
     list-style-type: none;
@@ -100,6 +126,11 @@ h5{
     width: 50%;
 }
 
+.fa-star{
+    font-size: 15px;
+    color:#1E81C0;
+}
+
 #lastParagraph{
     clear: both;
     margin-right: 320px;
@@ -167,25 +198,35 @@ th{
 
 .slide{
     padding: 5px 5px;
+    text-align: center;
     /* display: block; */
 }
 
-.slide:hover{
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
     background-color: #1E81C0;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 3px;
+}
+
+.slide:hover .tooltiptext{
+    visibility: visible;
 }
 
 #prev, #next {
     cursor: pointer;
     position: absolute;
-    bottom: 30%;
+    bottom: 40%;
     width: auto;
     padding: 16px;
     color: #1E81C0;
     font-weight: bolder;
     font-size: 40px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    /* transition: 0.6s ease; */
+    /* border-radius: 0 3px 0px 0; */
+    /* user-select: none; */
   }
 
   #prev{
@@ -195,51 +236,241 @@ th{
       right: 0px;
   }
 
+  /* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+    opacity: 0.5;
+    background-color: white;
+  }
+
   
 /* CONTACT PAGE */
+
+/* Styling for the form in the contact page  */
 #feedback{
     text-align: center;
     font-weight: bold;
 }
-/* Styling for the form in the contact page  */
 
 #contactEmail{
     text-align: center;
     margin-top: 50px;
 }
+
 #form{
     width: 60%;
     border:  groove white;
-    /* box-shadow: 2px -2px grey;  */
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
-    /* background-color: white; */
+}
+
+#form-content{
+    margin: 20px 20px 20px 20px;
 }
 
 #info, #radio, #selectList,#textareaDiv, #submit{
-    margin: 20px 0px 20px 20px;
+    margin: 0px 0px 20px 0px;
 }
 
+input{
+    width: 100%;
+}
+
+.radioButton{
+    width: 5%;
+}
+
+textarea{
+    width: 100%;
+}
 #textarea{
     height: 15em;
 }
 
  #submit, #reset{
     font-weight: bold;
-    /* padding:  15px ; */
-    
     padding: 8px;
     border-radius: 15px;
-
 }
 
 #submit{
     background-color: #E65629;
-    margin-right: 60px;
 }
 #reset{
     background-color: #1E81C0;
+}
+
+
+/* ----------------------For tablets----------------------------- */
+
+@media screen and (max-width: 768px){
+
+    /* ------------------index ----------------- */
+        #nav .navLinks{
+            margin: 20px 20px 20px 20px;
+        }
+    
+        ul{
+            padding-inline-start: 0px;
+        }
+    
+    /* ------------------portofolio ------------------- */
+        #FuturProjects, .slideshowContainer{
+            display: none;
+        }
+    
+        #table{
+            margin-bottom: 50px;
+        }
+    /* ------------ contact -------------------- */
+        #form{
+            width: 80%;
+        }   
+       
+    }
+/* ---------------------For large phone-------------------------------------     */
+@media screen and (max-width: 426px){
+
+/* ------------------Index page --------------- */
+    html{
+        background-color: transparent;
+    }
+    
+    #wrapper{
+        background-color: #E6E7E8;
+    }
+    #hambergerMenu{
+        display: inline-block;
+    }
+    
+    body{
+        margin: 0px ;
+    }
+
+    h1{
+        text-align: left;
+        padding-left: 20px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+   #imageHomePage, #lastParagraph{
+       display: none;
+   }
+
+   .getInTouch, .fa-bars{
+       display: inline-block;
+   }
+
+   .getInTouch{
+       margin-left: 20px;
+
+   }
+
+   #nav{
+    /* border: 1px solid red; */
+    text-align: left;
+   }
+
+   ul{
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+   }
+   nav li{
+        text-align: left;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid #1E81C0;
+    }
+
+    #nav .navLinks{
+        font-weight: bold;
+        margin: 0px 0px 0px 0px;
+        border: none;
+    }
+
+    #nav .navLinks:hover{
+        border-right: none;
+        border-left: none;
+        color: #1E81C0;
+    }
+/* -----------------Resume page--------------------------- */
+    #downloadLink{
+       margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    .left{
+        margin-left: 10px;
+    }
+
+    .right{
+        margin-left: 1px;
+        margin-right: -3px;
+    }
+
+    .fa-star{
+        font-size: 10px;
+    }
+
+    .columns{
+        width: 46%;
+    }
+
+    h5{
+        margin-left: 20px;
+
+    }
+  
+/* ------------------portofolio -------------- */
+    #para{
+        display: none;
+    }
+
+    #FuturProjects, .slideshowContainer{
+        display: none;
+    }
+
+    #table{
+        width: 85%;
+        margin-top: 20px;
+    }
+/* ------------ contact -------------------- */
+    #form{
+        width: 90%;
+    }   
+}
+
+/* ----------------------For small phone----------------------------------------------- */
+@media screen and (max-width: 375px){
+    a #hambergerMenu{
+        background-color: rebeccapurple;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+    #table{
+        /* width: 75%; */
+        margin-left: 15px;
+    }
+
+/* ----------------------For smaller phone----------------------------------------------- */
+
+@media screen and (max-width: 320px){
+    
+    h1{
+        font-size: 20px;
+    }
+
+    #nav, #table{
+         font-size: 13px;
+    }
+}
+
+
 }
 
 

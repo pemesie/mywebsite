@@ -4,12 +4,14 @@
 <head>
 	<title>Georges Nchouwat</title>
     <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script  src="main.js" defer></script>
 </head>
 <main id="wrapper">	
-    
-    <h1 id="header">Georges Nchouwat</h1>
+    <h1>Georges Nchouwat<a id="hambergerMenu"><i class="fas fa-bars"></i></a></h1>
     <div id="nav">
         <nav>
             <ul >
@@ -20,116 +22,118 @@
             </ul>
         </nav>	
     </div>
+    <a class="getInTouch" href="tel:402-853-8221"><i class="fas fa-phone"></i></a>
+    <a class="getInTouch" href="mailto:pemesie1@yahoo.fr"><i class="fas fa-envelope" ></i></a>
     <div id="downloadLink"><a href="documents/Resume_SE.pdf" target="_blank">Download Resume</a></div>
     <h2>Technologies</h2>
     <div class="technologies">
         <div class="columns left">
-            <h5>CSS 
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">CSS 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
             </h5> 
-            <h5>HTML5 
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">HTML5 
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Javascript
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">Javascript
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Java
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">Java
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Jquery
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">Jquery
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Mysql
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">Mysql
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Python
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">Python
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5> 
-            <h5>php
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="left">php
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
         </div>
         <div class="columns right">
-            <h5>Version Control ( GIT )
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="right">Version Control              <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Agile Methodology
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="right">Agile Meth.
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>JSON
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="right">JSON
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Design Patterns
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+
+            <h5 class="right">Node.js
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Node.js
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="right">AJAX
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>AJAX
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="right">OOP
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
-            <h5>Object Orientated Programming
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="fas fa-star" style="font-size:15px;color:#1E81C0"></i>
-                <i class="far fa-star" style="font-size:15px;color:#1E81C0"></i>
+            <h5 class="right">Design Patterns
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
             </h5>
         </div>
     </div>

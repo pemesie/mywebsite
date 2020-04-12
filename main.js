@@ -1,17 +1,12 @@
 
-
+// Georges Nchouwat
 
 $(document).ready(function(){
-
-
     let previousPointer = 1;
     let nextPointer = 3;
     const $element = $(".slideshowContainer");
     // Find number of sliders in the div. Substract the 2 last children which aren't sliders.
     const nberOfSliders =  $(".slideshowContainer").children().length - 2;
-
-    console.log( nberOfSliders);
-
 
 // ----------- Functions definition -------
     function actionOnSliderPrevious(){
@@ -22,7 +17,6 @@ $(document).ready(function(){
             $($element).find(`.slide${previousPointer + 3}`).css("display", "block") ;
             previousPointer++;
             nextPointer++;
-
         }
     }
 
@@ -40,16 +34,26 @@ $(document).ready(function(){
     init = function(){
         let $previousElement = $("#prev");
         let $nextElement = $("#next");
-    
         $previousElement.on("click", actionOnSliderPrevious);
         $nextElement.on("click", actionOnSliderNext);
     }
     
-    // window.addEventListener("load", init);
-
-
-
+// -----------------------------------------------------------------------
     init();
+
+// Handle interaction in mobile mode
+    $("#hambergerMenu").on("click", () => {
+        console.log("hamberger");
+        const $node = $("#nav");
+        if(!$node.is(":visible")){
+            $node.css("display", "block");
+        }
+        else{
+            $node.css("display", "none");
+        }
+    });
+
+
 });
 
 
