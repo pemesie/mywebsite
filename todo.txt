@@ -1,9 +1,7 @@
-responsive website:
-    - tablet 
-    - phone
 
-
+change the github link to the project link
 in mobile version
+    html orientation: landscape
 
 
 on tablet
