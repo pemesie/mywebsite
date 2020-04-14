@@ -1,3 +1,14 @@
 responsive website:
     - tablet 
     - phone
+
+
+in mobile version
+
+
+on tablet
+	slidershow change dimension 
+
+if nav bars are hidden and you filp the phone,  the nav bars don't slidershow
+
+after pressing  'send' gmail display the email in JSON file before sending. Why????

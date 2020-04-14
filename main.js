@@ -2,6 +2,7 @@
 // Georges Nchouwat
 
 $(document).ready(function(){
+    
     let previousPointer = 1;
     let nextPointer = 3;
     const $element = $(".slideshowContainer");

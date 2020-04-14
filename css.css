@@ -28,7 +28,7 @@ h1{
 
 .fa-bars{
     color: #E65629;
-    margin-left: 65px;
+    margin-left: 75px;
     display: none;
 }
 
@@ -339,12 +339,21 @@ textarea{
     #wrapper{
         background-color: #E6E7E8;
     }
+
     #hambergerMenu{
         display: inline-block;
     }
     
     body{
         margin: 0px ;
+    }
+
+    #nav .navLinks{
+        padding: 0px;
+    }
+
+    #nav .navLinks li{
+        padding-left: 10px;
     }
 
     h1{
@@ -394,7 +403,7 @@ textarea{
     #nav .navLinks:hover{
         border-right: none;
         border-left: none;
-        color: #1E81C0;
+        text-decoration: underline;
     }
 /* -----------------Resume page--------------------------- */
     #downloadLink{
@@ -452,12 +461,14 @@ textarea{
     h1{
         font-size: 25px;
     }
+
     #table{
         /* width: 75%; */
         margin-left: 15px;
     }
 
 /* ----------------------For smaller phone----------------------------------------------- */
+
 
 @media screen and (max-width: 320px){
     
